@@ -1,0 +1,30 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.logo {
+    width: 50%;
+}
+.navbar {
+    width: 37.5%;
+}
+.navabr__ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navbar__link{
+    text-decoration: none;
+    color: white;
+}

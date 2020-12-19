@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-dark: #1C201E;
+    --color-white: white;
+}
+
+.container {
+    width: 63%;
+    margin: 0 auto;
+}
+body{
+    background-color: var(--color-white);
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+.padding_bottom{
+ padding-bottom: 10px; 
+ box-sizing: border-box;  
+}
+.padding_7per_1per{
+    padding: 7% 1%;
+    box-sizing: border-box;
+}
+.padding_top_4per{
+    padding-top: 2%;
+    box-sizing: border-box;
+}
+.padding_top_7per{
+    padding-top: 7%;
+    box-sizing: border-box;
+}
+.padding_top_10per{
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+.padding_top_15per{
+    padding-top: 15%;
+}
+.padding_left_1per{
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+.padding_left_2per{
+    padding-left: 2%;
+    box-sizing: border-box;
+}
+.padding_left_4per{
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+.padding_left_10per{
+    padding-left: 15%;
+    box-sizing: border-box;
+}
+.padding_left_7per{
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+.padding_top_18per{
+    padding-top: 18%;
+    box-sizing: border-box;
+}
+.margine_bootom_26{
+    margin-bottom: 26px;
+}
+.margine_bootom_20{
+    margin-bottom: 20px;
+    /* box-sizing: border-box; */
+}
+.margine_bootom_15{
+    margin-bottom: 15px;
+    /* box-sizing: border-box; */
+}
+.margin_top{
+    padding-top: -10px;
+}
+.margine_bootom_40{
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+.margine_bootom_45{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.h1_white{
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 2.5px;
+}
+.h4_white{
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.7px;
+    word-spacing: 2.5px;
+}
+.h3_dark{
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 51px;
+    letter-spacing: 0.4px;
+    color: var(--color-dark);
+    font-family: 'Poppins';
+}
+.h4_dark{
+    color: var(--color-dark);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+.center_vertical{
+    display: flex;
+    align-items: center;
+}
+.h3_white{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}

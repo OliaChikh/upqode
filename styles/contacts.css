@@ -1,0 +1,39 @@
+.contacts_wrap{
+    max-width: 1253px;
+    height: 1145px;
+    display: flex;
+    margin: 0 auto;
+}
+.contacts_locations{
+    width: 30%;
+}
+.contacts_location{
+    width: 270px;
+    height: 120px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contacts__map{
+    width: 702px;
+    height: 756px;
+    position: relative;
+}
+.contacts__map__info{
+    width: 321px;
+    height: 520px;
+    box-sizing:border-box;
+    position: absolute;
+    top: 50%;
+    left: 69%;
+    z-index: 10;
+    transform: translate(0, -50%);
+    background-color: white;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0758039);
+}
+.location{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+

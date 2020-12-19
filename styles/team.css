@@ -1,0 +1,54 @@
+.team_wrap{
+    display: flex;
+    max-width: 1165px;
+    max-height: 790px;
+    margin: 0 auto;
+    /* margin-bottom: 207px; */
+}
+.team__member_info{
+    width: 55%;
+    position: relative;
+}
+/* .team__member{
+    position: relative;
+    max-height: 534px;
+} */
+.position1{
+    z-index: 10;
+    position: relative;
+}
+.position2{
+    position: absolute;
+    left: 38%;
+    top: 5%;  
+    z-index: 5;  
+}
+.position3{
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    z-index: 2;
+}
+.team__member__slidebar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    height: 24%;
+    position: absolute;
+    bottom: 10px;
+}
+.team__member__slidebar__button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 16px;
+    color: #00A031;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Gilroy';
+}
+.networks{
+    display: flex;
+    /* display: inline-block; */
+}
