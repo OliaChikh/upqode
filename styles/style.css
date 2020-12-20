@@ -5,6 +5,7 @@
 :root{
     --color-dark: #1C201E;
     --color-white: white;
+    --grey-color: #6C6C6C;
 }
 
 .container {
@@ -124,3 +125,58 @@ body{
     line-height: 24px;
     letter-spacing: 0.7px;
 }
+
+@media screen and (max-width: 1600px){
+    .h1_white{
+        font-weight: 400;
+        font-size: 60px;
+        letter-spacing: 2px;
+    }
+    
+}
+@media screen and (max-width: 1200px){
+    .h1_white{
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .h3_dark{
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .h4_dark{
+        font-size: 16px;
+        line-height: 14px;
+        letter-spacing: 0.2px;
+    }
+    
+}
+@media screen and (max-width: 968px){
+    .h1_white{
+        font-weight: 400;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .slideshow__content .h4_white{
+        font-weight: 300;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.3px;
+        word-spacing: 1px;
+        overflow-wrap: break-word;
+    }
+}
+/* @media screen and (max-width: 620px){
+    .slideshow__content .h1_white{
+        display: none;
+    }
+    .slideshow__content .h4_white{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        letter-spacing: 0.2px;
+        word-spacing: 0.5px;
+    }
+} */

@@ -13,7 +13,12 @@
     position: relative;
     box-sizing: border-box;
 }
-
+iframe{
+    max-width: 702px;
+    max-height: 760px;
+    width: 702px;
+    height: 760px;
+}
 .contacts__map{
     width: 702px;
     height: 756px;
@@ -36,4 +41,146 @@
     top: 8px;
     left: 10px;
 }
+@media screen and (max-width: 1600px){
+    .contacts_wrap{
+        width: 70%;
+    }
+    
+    .contacts__map__info{
+        width: 321px;
+        height: 520px;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        transform: translate(0, -50%);
+    }
+}
+@media screen and (max-width: 1200px){
+    .contacts_wrap{
+        max-height: 705px;
+    }
+    iframe{
+        max-width: 500vh;
+        height: 500px;
+        max-height: 500vh;
+        width: 500px;
+    }
+    .contacts_locations{
+        width:33%;
+    }
+    .contacts__map__info{
+        width: 220px;
+        height: 330px;
+        top: 30%;
+        left: 56%;
+    }
+    .contacts_location{
+        width: 200px;
+        height: 90px;
+    }
+    .contacts_wrap .margine_bootom_45{
+        margin-bottom: 20px;
+    }
+    .contacts__map__info .margine_bootom_26 {
+        margin-bottom: 10px;
+    }
+    .contacts__map__info .padding_top_7per{
+        padding-top: 0%;
+    } 
+    .contacts__map__info.padding_left_7per{
+        padding-left: 2%;
+    }
+}
+@media screen and (max-width: 968px){
+    .contacts_wrap{
+        display: block;
+        max-height: 1005px;
+    }
+    
+    .contacts_locations{
+        width:100%;
+    }
+    .contacts_locations_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .contacts_location{
+        width: 190px;
+        height: 140px;
+        border: 1px solid black;
+    }
+    .contacts_locations_box .padding_left_10per{
+        padding-left: 20px;
+    }
+    .location{
+        width: 15px;
+        height: 15px;
+        top: 8px;
+        left: 0px;
+    }
+    .contacts_locations h2 br {
+        display: none;
+    }
+    #contacts_locations br{
+        display: none;
+    }
+    iframe{
+        max-width: 400vh;
+        height: 500px;
+        max-height: 500vh;
+        width: 400px;
+    }
+    .padding_top_7per, .padding_left_7per{
+        padding: 0;
+    }
+}
 
+
+@media screen and (max-width: 768px){
+    .contacts_wrap{
+        display: block;
+        max-height: 1005px;
+    }
+    .contacts__map{
+        max-width: 70%;
+        max-height: 856px;
+    }
+    .contacts_locations{
+        width:100%;
+    }
+    .contacts_locations_box{
+        display: flex;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .contacts__map__info{
+        left: 70%
+    }
+    .contacts_location{
+        width: 190px;
+        height: 140px;
+        border: 1px solid black;
+    }
+    .contacts_locations_box .padding_left_10per{
+        padding-left: 20px;
+    }
+    .location{
+        width: 15px;
+        height: 15px;
+        top: 8px;
+        left: 0px;
+    }
+    .contacts_locations h2 br {
+        display: none;
+    }
+    #contacts_locations br{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .contacts__map__info{
+        /* зробити під картою */
+    }
+}

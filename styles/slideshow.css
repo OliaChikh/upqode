@@ -6,15 +6,22 @@ html, body{
     padding: 0;
 }
 .slideshow__image {
+    display: none;
     height: 100%;
     width: 100%;
     z-index: -1;   
     top: 0;
 }
+.slideshow iframe{
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
 .slideshow{
     position: relative;
     width: 100%;
-    margin-top: -15px;
+    /* margin-top: -15px; */
 }
 .slideshow__wrap{
     max-width: 1543px;
@@ -36,10 +43,11 @@ html, body{
 
 
 .dots{
-    width: 80%;
     position: absolute;
+    left: 48%;
     z-index: 10;
     bottom: 10.6%;
+    transform: rotateX(-50%);
     text-align: center;
     padding-left: 4px;
 }
@@ -67,7 +75,6 @@ html, body{
     color: white;
     font-size: 18px;
     text-align: center;
-    /* margin-top: 45px; */
 }
 .prev{
     position: absolute;
@@ -88,3 +95,61 @@ html, body{
 
 
 
+@media screen and (max-width: 1600px){
+    .button{
+        width: 152px;
+        height: 44px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .button{
+        width: 122px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    .dots{
+        left: 45%;
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+}
+@media screen and (max-width: 968px){
+    .slideshow__content{
+        width: 70%;
+    }
+    .prev{
+        top: 30.5%;
+        left: -5%;
+        opacity: 0.6;
+        font-size: 30px;
+    }
+    .next{
+        top: 30.5%;
+        right: -5%;
+        font-size: 30px;
+    }
+    .slideshow__button{
+        padding-top: 20px;
+    }
+} 
+@media screen and (max-width: 620px){
+    .button{
+        width: 102px;
+        height: 25px;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+    .dots{
+        left: 45%;
+    }
+    .dot {
+        height: 5px;
+        width: 5px;
+    }
+}

@@ -28,7 +28,17 @@
                         <img src="img/Logo.png" alt="Logo">
                     </a>
                 </div>
-                <nav class="navbar">
+                <div class="cross" id="cross">
+                    <p>X</p>
+                </div>
+
+                <div class="burger__menu" id="burger__menu">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </div>
+
+                <nav class="navbar" id="navbar">
                     <ul class="navabr__ul">
                         <li class="navbar__item"><a href="#" class="navbar__link h3_white">Home</a></li>
                         <li class="navbar__item"><a href="#" class="navbar__link h3_white">Services</a></li>
@@ -43,13 +53,17 @@
     
     <section class="slideshow">
         <img src="img/banner1.png" alt="" class= "slideshow__image">
-        <!-- <img src="img/banner2.png" alt="" class= "slideshow__page__image">
-        <img src="img/Bitmap Copy.png" alt="" class= "slideshow__page__image"> -->
+        <img src="img/banner2.png" alt="" class= "slideshow__image">
+        <video class= "slideshow__image" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+         
+          </video>
+        <!-- <img src="img/banner1.png" alt="" class= "slideshow__image"> -->
         <div class="slideshow__wrap">
             <div class="slideshow__content">
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+                <a class="next" onclick="plusDivs(1)">&#10095;</a>
 
                 <div class="slideshow__text">
                     <h1 class="padding_bottom h1_white ">Mileage Made Simple</h1>
@@ -62,22 +76,18 @@
                 
             </div>
             <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentDiv(1)"></span>
+                <span class="dot" onclick="currentDiv(2)"></span>
+                <span class="dot" onclick="currentDiv(3)"></span>
             </div>
         </div>
         
     </section>
     <section class="services">
-        <!-- <div class="container"> -->
-            
-            <!-- part1 -->
             <div class="instruction padding_7per_1per ">
                 
                 <div class="instruction__image">
                     <div class="cirsle_point">
-                        <div id="circle_quater_top"></div>
                         <div class="circle_grey">
                             <div class="circle_lightgrey">
                                 
@@ -103,11 +113,12 @@
                     <button class="button__service">Learn more --&#8674;</button>  
                 </div>
             </div>
-            <!-- part2  -->
+
+
+
             <div class="instruction padding_7per_1per">
                 <div class="instruction__image padding_left_4per">
                     <div class="cirsle_point">
-                        <div id="circle_quater_bottom"></div>
                         <div class="circle_grey">
                             <div class="circle_lightgrey">
                                 <img src="img/phone2.png" alt="" class="instruction__image_phone">
@@ -133,7 +144,6 @@
             </div>
 
 
-            <!-- part3 -->
             <div class="instruction padding_top_10per padding_left_2per">
                 <div class="instruction__image">
                     <div class="cirsle_point">
@@ -161,49 +171,51 @@
                 </div>
             </div>
 
-        <!-- </div> -->
     </section>
 
 
     <!-- team -->
     <section id = "team" class=" padding_top_18per ">
-        <!-- <div class="container"> -->
+        
             <div class="team_wrap">
                 <div class="team__member_info padding_top_4per">
-                
-                    <p class="h3_green">Julia Harrington</p>
-                    <p class="h4_grey margine_bootom_40">ART DIRECTOR</p>
-                    <p class="h4_grey margine_bootom_45">
-                        Have you ever had a problem with a burned light? Thanks to the <br>
+                <!-- name of member  -->
+                    <p class="h3_green" id = 'nameOfMember'></p>
+                    <!-- position of member  -->
+                    <p class="h4_grey margine_bootom_40" id="positionOfMember"></p>
+                    <!-- description of member  -->
+                    <p class="h4_grey margine_bootom_45" id="descriptionOfMember">
+                        <!-- Have you ever had a problem with a burned light? Thanks to the <br>
                         effort of Thomas Edison we no longer need to invent a light bulb. <br>
                         We just go to the store or our cupboard and pull one out and <br>
                         screw it in. When we are feeling so low and deep in the pits, this is<br> 
-                        when we need light to see our way through.
+                        when we need light to see our way through. -->
                     </p>
-                    <!-- <h4 class="networks h4_grey padding_bottom"> -->
                         <ul class="networks h4_grey">
                             <li><a href="">FACEBOOK</a> <span>&nbsp;&nbsp;</span> </li>
                             <li><a href="">LINKEDIN</a> <span>&nbsp;&nbsp;</span></li>
                             <li><a href="">TWITTER</a> <span>&nbsp;&nbsp;</span></li>
                         </ul>
-                        <!-- <span> &nbsp;</span> <span> &nbsp;LINKEDIN </span> <span> &nbsp;TWITTER</span>   -->
-                    <!-- </h4> -->
                     <div class="team__member__slidebar">
-                        <img src="img/memberOfTeam2.png" alt="">
+                        <!-- фото працівника
+                            <img src="img/memberOfTeam2.png" alt=""> -->
+                        <img src="" alt="member of team photo next" id="teamPhotoNext" class="team__member__slidebar__photo">
                         <div style="padding-left: 20px; width: 70%;">
                             <div class="team__member__slidebar__button ">
-                                <p class="team__member_slidebar__button_next ">NEXT &#10230;</p>
-                                <p class="team__member_slidebar__button_prev" >&#10229; PREV </p>
+                                <p class="team__member_slidebar__button_next "  onclick="addIndex(1)">NEXT &#10230;</p>
+                                <p class="team__member_slidebar__button_prev" onclick="addIndex(-1)">&#10229; PREV </p>
                             </div>
                             <div>
-                                <p class="h4_green">Minnie Bell</p>
+                                <p class="h4_green" id = "nameTeamNext"></p>
+                                <p class="h4_green" id = "nameTeamPrev"></p>
                             </div>  
-                        </div>   
+                        </div>  
+                        <img src="" alt="member of team photo prev" id="teamPhotoPrev" class="team__member__slidebar__photo"> 
                     </div>
                 </div>
                 <div class="team__member  padding_left_2per">
                     <div style="position: relative;">
-                        <img src="img/memberOfTeam1.png" alt="" class="team__member__photo position1">
+                        <img src="img/memberOfTeam1.png" class="team__member__photo position1" alt="member of team photo current" id="teamPhotoCurrent">
                         <img src="img/memberOfTeam3.png" alt="" class="team__member__photo position2">
                         <img src="img/memberOfTeam4.png" alt="" class="team__member__photo position3">
                     </div>
@@ -211,13 +223,11 @@
                 </div>
             </div>
             
-        <!-- </div> -->
         
     </section>
 
     <!-- contacts -->
     <section id="contaacts">
-        <!-- <div class="container"> -->
             <div class="contacts_wrap padding_top_10per padding_left_2per">
                 <div class="contacts_locations">
                     <h2 class="h2_green margine_bootom_15">Meet Us <br> in Your City</h2>
@@ -225,46 +235,50 @@
                     <h4 id = "contacts_locations" class="h4_grey margine_bootom_45 ">2005 Stokes Isle Apt. 896, <br>
                         Venaville, New York 10010
                     </h4>
-                    <div class="contacts_location padding_left_10per ">
-                        <img src="img/location.png" alt="location" class="location">
-                        <h4 class="h4_green padding_top_4per"> Los Angeles, USA </h4>
-                        <h4 class="h4_grey padding_top_4per ">
-                            2005 Stokes Isle Apt. 896, <br>
-                            Venaville, New York 10010
-                        </h4>
-                    </div> 
-                    <div class="contacts_location padding_left_10per">
-                        <img src="img/location.png" alt="location" class="location">
-                        <h4 class="h4_green padding_top_4per">  NewYork, USA </h4>
-                        <h4 class="h4_grey padding_top_4per">
-                            2005 Stokes Isle Apt. 896, <br>
-                            Venaville, New York 10010
-                        </h4>
-                    </div>  
-                    <!-- location3  -->
+                    <div class="contacts_locations_box">
+                        <div class="contacts_location padding_left_10per ">
+                            <img src="img/location.png" alt="location" class="location">
+                            <h4 class="h4_green padding_top_4per"> Los Angeles, USA </h4>
+                            <h4 class="h4_grey padding_top_4per ">
+                                2005 Stokes Isle Apt. 896, <br>
+                                Venaville, New York 10010
+                            </h4>
+                        </div> 
+                        <div class="contacts_location padding_left_10per">
+                            <img src="img/location.png" alt="location" class="location">
+                            <h4 class="h4_green padding_top_4per">  NewYork, USA </h4>
+                            <h4 class="h4_grey padding_top_4per">
+                                2005 Stokes Isle Apt. 896, <br>
+                                Venaville, New York 10010
+                            </h4>
+                        </div>  
 
-                    <div class="contacts_location padding_left_10per">
-                        <img src="img/location.png" alt="location" class="location">
-                        <h4 class="h4_green padding_top_4per">  Boston, USA </h4>
-                        <h4 class="h4_grey padding_top_4per">
-                            2005 Stokes Isle Apt. 896,<br>
-                            Venaville, New York 10010
-                        </h4>
-                    </div>   
-                    <!-- location4 -->
-
-                    <div class="contacts_location padding_left_10per">
-                        <img src="img/location.png" alt="location" class="location">
-                        <h4 class="h4_green padding_top_4per">  Detroit, USA </h4>
-                        <h4 class="h4_grey padding_top_4per">
-                            2005 Stokes Isle Apt. 896,<br>
-                            Venaville, New York 10010
-                        </h4>
-                    </div>   
+                        <div class="contacts_location padding_left_10per">
+                            <img src="img/location.png" alt="location" class="location">
+                            <h4 class="h4_green padding_top_4per">  Boston, USA </h4>
+                            <h4 class="h4_grey padding_top_4per">
+                                2005 Stokes Isle Apt. 896,<br>
+                                Venaville, New York 10010
+                            </h4>
+                        </div>   
+    
+                        <div class="contacts_location padding_left_10per">
+                            <img src="img/location.png" alt="location" class="location">
+                            <h4 class="h4_green padding_top_4per">  Detroit, USA </h4>
+                            <h4 class="h4_grey padding_top_4per">
+                                2005 Stokes Isle Apt. 896,<br>
+                                Venaville, New York 10010
+                            </h4>
+                        </div>   
+                    </div>
+                    
                 </div>
                 <div class="contacts__map">
-                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3156997987!2d-74.26055955700217!3d40.69714773927938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1608235857495!5m2!1suk!2sua" 
-                    width="702" height="760" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="map">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3156997987!2d-74.26055955700217!3d40.69714773927938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1608235857495!5m2!1suk!2sua" 
+                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        
+                    </div>
                     <div class="contacts__map__info padding_top_7per padding_left_7per">
                         <h3 class="h3_dark padding_bottom">NewYork</h3>
                         <h4 class="h4_grey margine_bootom_26 ">
@@ -295,7 +309,6 @@
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
         
         
     </section>
@@ -322,7 +335,8 @@
             
 
     </footer>
-    
-
+    <script src="scripts/team.js"></script>
+    <script src="scripts/slideshow.js"></script>
+<script src="scripts/burgerMenu.js"></script>
 </body>
 </html>

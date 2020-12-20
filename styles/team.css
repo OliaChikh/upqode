@@ -16,6 +16,8 @@
 .position1{
     z-index: 10;
     position: relative;
+    width: 400px;
+    height: 547px;
 }
 .position2{
     position: absolute;
@@ -38,6 +40,10 @@
     position: absolute;
     bottom: 10px;
 }
+.team__member__slidebar__photo{
+    width: 91px;
+    height: 130px;
+}
 .team__member__slidebar__button{
     display: flex;
     justify-content: space-between;
@@ -51,4 +57,57 @@
 .networks{
     display: flex;
     /* display: inline-block; */
+}
+@media screen and (max-width: 1600px){
+    .team_wrap{
+        width: 70%;
+    }
+    .team__member_info br{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .team__member__photo:first-child{
+     width: 350px;
+     height: 500px;
+    }
+    .position2{
+        left: 18%;
+        top: 3%;   
+    }
+    .position3{
+        position: absolute;
+        left: 38%;
+        top: 10%;
+        z-index: 2;
+    }
+    
+}
+/* @media screen and (max-width: 968px){
+    .team__member__photo:first-child{
+     width: 250px;
+     height: 400px;
+    }
+    .position2{
+        left: 18%;
+        top: 3%;   
+    }
+    .position3{
+        position: absolute;
+        left: 38%;
+        top: 10%;
+        z-index: 2;
+    }
+    
+} */
+@media screen and (max-width: 968px){
+    .position1, .position2, .position3{
+        display: none;
+    }
+    .team__member_info{
+        width: 100%;
+    }
+    .team_wrap{
+        height: 370px;
+    }
 }

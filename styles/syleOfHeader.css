@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 100;
 }
+
 .header__wrap {
     max-width: 1170px;
     margin: 0 auto;
@@ -15,6 +16,26 @@
 }
 .logo {
     width: 50%;
+}
+
+.cross{
+    display: none;
+    width: 30px;
+    height: 35px;
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+.burger__menu {
+    display: none;
+    height: 30px;
+}
+.burger__line{
+    width: 40px;
+    height: 5px;
+    background-color: white;
 }
 .navbar {
     width: 37.5%;
@@ -27,4 +48,37 @@
 .navbar__link{
     text-decoration: none;
     color: white;
+}
+@media screen and (max-width: 1600px){
+    .header__wrap{
+        max-width: 70%;
+    }
+    .logo {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .header{
+        height: 150px;
+        /* background-color: #00A031;
+        opacity: 0.6; */
+    }
+    .burger__menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .navbar{
+        width: 100px;
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 15%;
+        
+    }
+    .navabr__ul{
+        display: block;
+        /* position: absolute; */
+    }
 }

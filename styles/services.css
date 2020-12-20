@@ -159,3 +159,147 @@
     color: var(--green-color);
     font-family: 'Gilroy';
 }
+
+@media screen and (max-width: 1600px){
+    .h3_green{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 51px;
+        font-style: normal;
+        letter-spacing: 1.5px;
+    }
+    .services{
+        width: 70%;
+        
+    }
+    .instruction__text br{
+        display: none;
+    }
+    .cirsle_point{
+        width: 422px;
+        height: 422px;
+        border: 4px dashed #C8E6D1;
+        
+    }
+    .circle_grey{
+        width: 360px;
+        height: 360px;
+    }
+    .circle_lightgrey{
+        width: 270px;
+        height: 270px;
+        
+    }
+    .instruction__image_phone{
+        width: 350px;
+        height: 500px;
+        top: 57%;
+    }
+    .instruction:nth-child(2) .instruction__image_phone{
+        width: 500px;
+        height: 600px;
+        /* top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+    .instruction:nth-child(2) .padding_left_4per{
+        padding-left: 0;
+
+    }
+    .h2_green{
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        word-spacing: 1.5px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .h3_green{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        font-style: normal;
+        letter-spacing: 1px;
+    }
+    .services{
+        width: 70%;
+        
+    }
+    .instruction__text br{
+        display: none;
+    }
+    .cirsle_point{
+        width: 310px;
+        height: 310px;
+        border: 2px dashed #C8E6D1;
+        
+    }
+    .circle_grey{
+        width: 280px;
+        height: 280px;
+    }
+    .circle_lightgrey{
+        width: 220px;
+        height: 220px;
+        
+    }
+    .instruction__image_phone{
+        width: 250px;
+        height: 350px;
+        top: 57%;
+    }
+    .instruction:nth-child(2) .instruction__image_phone{
+        width: 350px;
+        height: 420px;
+    }
+    .instruction:nth-child(2) .padding_left_4per{
+        padding-left: 0;
+
+    }
+    .h2_green{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+    }
+    .h4_grey{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .button__service{
+        width: 178px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    .instruction__text_circleOfCkeckpoint{
+        width: 9px;
+        height: 9px;
+    }
+    .instruction__text_ckeckpoint{
+        position: absolute; 
+        top: -10px;
+        left: -1px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 968px){
+    .instruction {
+        display: block;
+    }
+    .instruction__image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .instruction__text{
+        margin: 0 auto;
+    }
+    .contacts_location .h4_green{
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+}
