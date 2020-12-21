@@ -4,6 +4,7 @@
     display: flex;
     margin: 0 auto;
 }
+
 .contacts_locations{
     width: 30%;
 }
@@ -13,7 +14,11 @@
     position: relative;
     box-sizing: border-box;
 }
-iframe{
+.contacts_location:hover {
+    cursor: pointer;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039);
+}
+.map{
     max-width: 702px;
     max-height: 760px;
     width: 702px;
@@ -59,7 +64,7 @@ iframe{
     .contacts_wrap{
         max-height: 705px;
     }
-    iframe{
+    .map{
         max-width: 500vh;
         height: 500px;
         max-height: 500vh;
@@ -96,6 +101,12 @@ iframe{
         display: block;
         max-height: 1005px;
     }
+    .contacts_location .h4_green{
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
     
     .contacts_locations{
         width:100%;
@@ -126,7 +137,7 @@ iframe{
     #contacts_locations br{
         display: none;
     }
-    iframe{
+    .map{
         max-width: 400vh;
         height: 500px;
         max-height: 500vh;
@@ -137,11 +148,19 @@ iframe{
     }
 }
 
-
+@media screen and (max-width: 865px){
+    .contacts__map {
+        width: 70%;
+    }
+    .contacts__map__info{
+        left: 70%
+    }
+}
 @media screen and (max-width: 768px){
     .contacts_wrap{
         display: block;
-        max-height: 1005px;
+        /* max-height: 1205px; */
+        height: 1305px;
     }
     .contacts__map{
         max-width: 70%;
@@ -178,9 +197,41 @@ iframe{
     #contacts_locations br{
         display: none;
     }
+    
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 576px){
+    .contacts_wrap{
+        max-height: 1300px;
+        height: 1300px;
+    }
+    .map{
+        max-width: 360vh;
+        height: 420px;
+        max-height: 420vh;
+        width: 360px;
+    }
+}
+@media screen and (max-width: 480px){
+    .contacts_wrap{
+        max-height: 1500px;
+        height: 1500px;
+    }
     .contacts__map__info{
-        /* зробити під картою */
+        
+        width: 221px;
+        height: 300px;
+        margin-left: 15%;
+        top: 75%;
+        left: 0%;
+        /* transform: translate(0, -50%); */
+    }
+    .contacts__map{
+        height: 700px;
+    }
+    .map{
+        max-width: 260vh;
+        height: 320px;
+        max-height: 320vh;
+        width: 260px;
     }
 }

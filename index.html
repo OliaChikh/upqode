@@ -17,15 +17,18 @@
  <!-- fonts -->
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-
+ <script
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiN2r9_I93zLOdUDRP25VjESIA6FiXeYs&callback=initMap&libraries=&v=weekly"
+ defer>
+</script>
     </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
             <div class="header__wrap">
                 <div class="logo">
-                    <a href="#">
-                        <img src="img/logoIcon.png" alt=""><span>&nbsp;&nbsp; </span>
-                        <img src="img/Logo.png" alt="Logo">
+                    <a href="#header">
+                        <img src="img/logoIcon.png" alt="" class="logo__icon__img"><span>&nbsp;&nbsp; </span>
+                        <img src="img/Logo.png" alt="Logo" class="logo__img">
                     </a>
                 </div>
                 <div class="cross" id="cross">
@@ -40,10 +43,10 @@
 
                 <nav class="navbar" id="navbar">
                     <ul class="navabr__ul">
-                        <li class="navbar__item"><a href="#" class="navbar__link h3_white">Home</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h3_white">Services</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h3_white">Team</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h3_white">Conatact Us</a></li>
+                        <li class="navbar__item"><a href="#slidershow" class="navbar__link h3_white">Home</a></li>
+                        <li class="navbar__item"><a href="#services" class="navbar__link h3_white">Services</a></li>
+                        <li class="navbar__item"><a href="#team" class="navbar__link h3_white">Team</a></li>
+                        <li class="navbar__item"><a href="#contaacts" class="navbar__link h3_white">Conatact Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +54,7 @@
         
     </header>
     
-    <section class="slideshow">
+    <section class="slideshow" id = "slidershow" name = "slidershow">
         <img src="img/banner1.png" alt="" class= "slideshow__image">
         <img src="img/banner2.png" alt="" class= "slideshow__image">
         <video class= "slideshow__image" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
@@ -76,14 +79,14 @@
                 
             </div>
             <div class="dots">
-                <span class="dot" onclick="currentDiv(1)"></span>
-                <span class="dot" onclick="currentDiv(2)"></span>
-                <span class="dot" onclick="currentDiv(3)"></span>
+                <span class = "cirgle_green"><span class="dot dot_white " onclick="currentDiv(1)"></span></span>    
+                <span class = "cirgle_green"><span class="dot dot_white " onclick="currentDiv(2)"></span></span>   
+                <span class = "cirgle_green"><span class="dot dot_white " onclick="currentDiv(3)"></span></span>   
             </div>
         </div>
         
     </section>
-    <section class="services">
+    <section class="services" name="services" id="services">
             <div class="instruction padding_7per_1per ">
                 
                 <div class="instruction__image">
@@ -96,7 +99,7 @@
                         </div>
                     </div>   
                 </div>
-                <div class="instruction__text padding_top_7per padding_left_1per">
+                <div class="instruction__text padding_top_7per padding_left_1_2per">
                     <h3 class="h3_green margine_bootom_26">Track every trip you make</h3>
                     <h4 class="h4_grey margine_bootom_20">Every one of your trips is captured immediately and is never forgotten.
                     </h4>
@@ -117,7 +120,7 @@
 
 
             <div class="instruction padding_7per_1per">
-                <div class="instruction__image padding_left_4per">
+                <div class="instruction__image padding_left_4per margin_top_minus_10px ">
                     <div class="cirsle_point">
                         <div class="circle_grey">
                             <div class="circle_lightgrey">
@@ -126,9 +129,9 @@
                         </div>
                     </div>   
                 </div>
-                <div class="instruction__text padding_top_10per padding_left_1per">
+                <div class="instruction__text padding_top_10per padding_left_0_7per">
                     <h3 class="h3_green margine_bootom_26">Classify with a single swipe </h3>
-                    <h4 class="h4_grey margine_bootom">Swipe right for business. Swipe left for personal. It’s as easy <br> as that.
+                    <h4 class="h4_grey padding_top_4per margin_top_minus_10px">Swipe right for business. Swipe left for personal. It’s as easy <br> as that.
                     </h4>
                     <br>
                     <div class="instruction__text__checkmark">
@@ -154,12 +157,12 @@
                         </div>
                     </div>   
                 </div>
-                <div class="instruction__text padding_top_7per padding_left_1per">
+                <div class="instruction__text padding_top_7per padding_left_0_7per ">
                     <h3 class="h3_green margine_bootom_26">Claim your money back with <br> ease </h3>
-                    <h4 class="h4_grey">Claiming mileage has never been so easy, with all calculations done <br> for you.
+                    <h4 class="h4_grey ">Claiming mileage has never been so easy, with all calculations <br>done  for you.
                     </h4>
                     <br>
-                    <div class="instruction__text__checkmark">
+                    <div class="instruction__text__checkmark ">
                         <div class="instruction__text_circleOfCkeckpoint"><span class="instruction__text_ckeckpoint">&#10003;</span></div> 
                         <h4 class=" h4_grey">&nbsp;&nbsp; 100% HMRC compliance</h4> 
                     </div>
@@ -167,7 +170,7 @@
                         <div class="instruction__text_circleOfCkeckpoint"><span class="instruction__text_ckeckpoint">&#10003;</span></div> 
                         <h4 class=" h4_grey">&nbsp;&nbsp; All logs in one place</h4> 
                     </div>
-                    <button class="button__service">Learn more --&#8674;</button>  
+                    <button class="button__service margine_left_10">Learn more --&#8674;</button>  
                 </div>
             </div>
 
@@ -175,37 +178,27 @@
 
 
     <!-- team -->
-    <section id = "team" class=" padding_top_18per ">
+    <section id = "team" class=" padding_top_18per " name = "team">
         
             <div class="team_wrap">
-                <div class="team__member_info padding_top_4per">
-                <!-- name of member  -->
-                    <p class="h3_green" id = 'nameOfMember'></p>
-                    <!-- position of member  -->
+                <div class="team__member_info padding_top_2per">
+                    <p class="h3_green" id='nameOfMember'></p>
                     <p class="h4_grey margine_bootom_40" id="positionOfMember"></p>
-                    <!-- description of member  -->
-                    <p class="h4_grey margine_bootom_45" id="descriptionOfMember">
-                        <!-- Have you ever had a problem with a burned light? Thanks to the <br>
-                        effort of Thomas Edison we no longer need to invent a light bulb. <br>
-                        We just go to the store or our cupboard and pull one out and <br>
-                        screw it in. When we are feeling so low and deep in the pits, this is<br> 
-                        when we need light to see our way through. -->
-                    </p>
+                    
+                    <p class="h4_grey margine_bootom_45" id="descriptionOfMember"></p>
                         <ul class="networks h4_grey">
                             <li><a href="">FACEBOOK</a> <span>&nbsp;&nbsp;</span> </li>
                             <li><a href="">LINKEDIN</a> <span>&nbsp;&nbsp;</span></li>
                             <li><a href="">TWITTER</a> <span>&nbsp;&nbsp;</span></li>
                         </ul>
                     <div class="team__member__slidebar">
-                        <!-- фото працівника
-                            <img src="img/memberOfTeam2.png" alt=""> -->
                         <img src="" alt="member of team photo next" id="teamPhotoNext" class="team__member__slidebar__photo">
                         <div style="padding-left: 20px; width: 70%;">
                             <div class="team__member__slidebar__button ">
                                 <p class="team__member_slidebar__button_next "  onclick="addIndex(1)">NEXT &#10230;</p>
                                 <p class="team__member_slidebar__button_prev" onclick="addIndex(-1)">&#10229; PREV </p>
                             </div>
-                            <div>
+                            <div class="team__member__slidebar__name">
                                 <p class="h4_green" id = "nameTeamNext"></p>
                                 <p class="h4_green" id = "nameTeamPrev"></p>
                             </div>  
@@ -227,7 +220,7 @@
     </section>
 
     <!-- contacts -->
-    <section id="contaacts">
+    <section id="contaacts" name =" contaacts">
             <div class="contacts_wrap padding_top_10per padding_left_2per">
                 <div class="contacts_locations">
                     <h2 class="h2_green margine_bootom_15">Meet Us <br> in Your City</h2>
@@ -236,7 +229,7 @@
                         Venaville, New York 10010
                     </h4>
                     <div class="contacts_locations_box">
-                        <div class="contacts_location padding_left_10per ">
+                        <div class="contacts_location padding_left_10per " onclick="showCity(0)">
                             <img src="img/location.png" alt="location" class="location">
                             <h4 class="h4_green padding_top_4per"> Los Angeles, USA </h4>
                             <h4 class="h4_grey padding_top_4per ">
@@ -244,16 +237,16 @@
                                 Venaville, New York 10010
                             </h4>
                         </div> 
-                        <div class="contacts_location padding_left_10per">
+                        <div class="contacts_location padding_left_10per" onclick="showCity(1)">
                             <img src="img/location.png" alt="location" class="location">
-                            <h4 class="h4_green padding_top_4per">  NewYork, USA </h4>
+                            <h4 class="h4_green padding_top_4per" >  NewYork, USA </h4>
                             <h4 class="h4_grey padding_top_4per">
                                 2005 Stokes Isle Apt. 896, <br>
                                 Venaville, New York 10010
                             </h4>
                         </div>  
 
-                        <div class="contacts_location padding_left_10per">
+                        <div class="contacts_location padding_left_10per" onclick="showCity(2)">
                             <img src="img/location.png" alt="location" class="location">
                             <h4 class="h4_green padding_top_4per">  Boston, USA </h4>
                             <h4 class="h4_grey padding_top_4per">
@@ -262,7 +255,7 @@
                             </h4>
                         </div>   
     
-                        <div class="contacts_location padding_left_10per">
+                        <div class="contacts_location padding_left_10per" onclick="showCity(3)">
                             <img src="img/location.png" alt="location" class="location">
                             <h4 class="h4_green padding_top_4per">  Detroit, USA </h4>
                             <h4 class="h4_grey padding_top_4per">
@@ -274,13 +267,13 @@
                     
                 </div>
                 <div class="contacts__map">
-                    <div class="map">
-                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3156997987!2d-74.26055955700217!3d40.69714773927938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1608235857495!5m2!1suk!2sua" 
-                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        
+                    <div class="map" id="map">
+                        <!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3156997987!2d-74.26055955700217!3d40.69714773927938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1608235857495!5m2!1suk!2sua" 
+                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+
                     </div>
-                    <div class="contacts__map__info padding_top_7per padding_left_7per">
-                        <h3 class="h3_dark padding_bottom">NewYork</h3>
+                    <div class="contacts__map__info padding_top_8per padding_left_7per"> 
+                        <h3 class="h3_dark padding_bottom" id = "choosenCity"></h3>
                         <h4 class="h4_grey margine_bootom_26 ">
                             2005 Stokes Isle Apt. 896, <br>
                             Venaville, New York 10010
@@ -306,7 +299,7 @@
                             <h4 class="h4_grey">hello@pad.architecture</h4>
                             <h4 class="h4_grey">support@pad.architecture</h4>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         
@@ -337,6 +330,8 @@
     </footer>
     <script src="scripts/team.js"></script>
     <script src="scripts/slideshow.js"></script>
-<script src="scripts/burgerMenu.js"></script>
+    <script src="scripts/burgerMenu.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/map.js"></script>
 </body>
 </html>

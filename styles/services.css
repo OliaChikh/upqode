@@ -8,6 +8,7 @@
     width: 1206px;
     max-height: 2350px;
     margin: 0 auto;
+    padding-top: 12px;
 }
 .h2_green{
     font-size: 52px;
@@ -30,7 +31,7 @@
     font-size: 38px;
     line-height: 51px;
     font-style: normal;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
 }
 .h4_grey{
     color: var(--grey-color);
@@ -77,6 +78,7 @@
     width: 50%;
     display: flex;
     justify-content: flex-start;
+    box-sizing: border-box;
 }
 .cirsle_point{
     width: 522px;
@@ -108,15 +110,19 @@
 }
 .instruction__image_phone{
     position: absolute;
-    top: 60%;
+    top: 59%;
     left: 52%;
     transform: translate(-50%, -50%);
     z-index: 10;
 }
 .instruction:nth-child(2) .instruction__image_phone{
-    top: 57%;
-    left: 46%;
+    top: 59%;
+    left: 47%;
     transform: translate(-50%, -50%);
+}
+.instruction:nth-child(3) .instruction__image_phone{
+    top: 60%;
+    left: 51%;
 }
 
 
@@ -296,10 +302,31 @@
     .instruction__text{
         margin: 0 auto;
     }
-    .contacts_location .h4_green{
-        font-size: 14px;
-        line-height: 14px;
-        font-weight: 400;
-        padding-top: 10px;
+    
+}
+@media screen and (max-width: 480px){
+    .cirsle_point{
+        width: 220px;
+        height: 220px;
+        border: 2px dashed #C8E6D1;
+        
+    }
+    .circle_grey{
+        width: 180px;
+        height: 180px;
+    }
+    .circle_lightgrey{
+        width: 140px;
+        height: 140px;
+        
+    }
+    .instruction__image_phone{
+        width: 180px;
+        height: 250px;
+        top: 57%;
+    }
+    .instruction:nth-child(2) .instruction__image_phone{
+        width: 240px;
+        height: 290px;
     }
 }

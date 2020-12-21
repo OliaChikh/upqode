@@ -29,9 +29,17 @@ body{
     padding-top: 2%;
     box-sizing: border-box;
 }
+.padding_top_2per{
+    
+    padding-top: 2.5%;
+    box-sizing: border-box;
+}
 .padding_top_7per{
     padding-top: 7%;
     box-sizing: border-box;
+}
+.padding_top_8per{
+    padding-top: 8%;
 }
 .padding_top_10per{
     padding-top: 10%;
@@ -40,6 +48,16 @@ body{
 .padding_top_15per{
     padding-top: 15%;
 }
+.padding_left_1_2per{
+    padding-left: 1.2%;
+    box-sizing: border-box;
+}
+.margin_top_minus_10px{
+    margin-top: -10px;
+}
+.padding_left_0_7per{
+    padding-left: 0.7%;
+}
 .padding_left_1per{
     padding-left: 1%;
     box-sizing: border-box;
@@ -47,6 +65,9 @@ body{
 .padding_left_2per{
     padding-left: 2%;
     box-sizing: border-box;
+}
+.padding_left_3per{
+    padding-left: 5%;
 }
 .padding_left_4per{
     padding-left: 4%;
@@ -64,9 +85,11 @@ body{
     padding-top: 18%;
     box-sizing: border-box;
 }
+
 .margine_bootom_26{
     margin-bottom: 26px;
 }
+
 .margine_bootom_20{
     margin-bottom: 20px;
     /* box-sizing: border-box; */
@@ -84,6 +107,10 @@ body{
 }
 .margine_bootom_45{
     margin-bottom: 50px;
+    box-sizing: border-box;
+}
+.margine_left_10{
+    margin-left: 10px;
     box-sizing: border-box;
 }
 .h1_white{
