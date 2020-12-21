@@ -46,7 +46,7 @@ const nameTeamNext = document.getElementById('nameTeamNext');
 const nameTeamPrev = document.getElementById('nameTeamPrev')
 
 let memberIndex = 0;
-showMember(memberIndex);
+
 
 function addIndex(n) {
     showMember(memberIndex += n);
@@ -68,3 +68,7 @@ function showMember(n) {
   nameTeamNext.textContent = nextMember.name;
   nameTeamPrev.textContent = prevMember.name;
 }
+showMember(memberIndex);
+window.addIndex = addIndex;
+window.showMember = showMember;
+module.exports = team;

@@ -4,6 +4,7 @@ const cross = document.getElementById('cross');
 const header = document.getElementById('header');
 const slidershow = document.getElementById('slidershow');
 burgerMenu.addEventListener('click', openMenu);
+
 function openMenu(){
     navbar.style.display = 'block';
     burgerMenu.style.display = 'none';
@@ -19,3 +20,10 @@ function closeMenu() {
     header.style.backgroundColor = "transparent";
     slidershow.style.marginTop = "0px"
 }
+
+function burgerMenuInit() {
+    cross.addEventListener('click', closeMenu)
+    burgerMenu.addEventListener('click', openMenu);
+}
+burgerMenuInit();
+module.exports = burgerMenu;

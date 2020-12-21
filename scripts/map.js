@@ -40,20 +40,14 @@ function showCity(n){
 }
 
 function initMap() {
-    const myLatLng = { lat: locations[1].locationX, lng: locations[1].locationY };
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 8,
-      center: myLatLng,
-    });
-    new google.maps.Marker({
-      position: myLatLng,
-      map,
-      title: "Hello World!",
-    });
+    showCity(1)
     choosenCity.textContent = locations[1].city
   }
 
   window.addEventListener('load',function(){
     initMap();
   }, false);
+
+window.showCity = showCity;
+module.exports = map;
   

@@ -19,7 +19,7 @@
 .footer__logo{
     position: absolute;
     left: 50%;
-    top: 18%;
+    top: 16%;
     transform: translateX(-50%);
 }
 .footer__wrap .navbar{

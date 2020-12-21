@@ -46,7 +46,7 @@ html, body{
     left: 47.8%;
     z-index: 10;
     bottom: 10%;
-    transform: rotateX(-50%);
+    /* transform: rotateX(-50%); */
     text-align: center;
     /* padding-left: 4px; */
 }

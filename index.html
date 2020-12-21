@@ -7,13 +7,15 @@
 
    
     <!--css-->
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/syleOfHeader.css">
     <link rel="stylesheet" href="styles/slideshow.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/team.css">
     <link rel="stylesheet" href="styles/contacts.css">
-    <link rel="stylesheet" href="styles/syleOfFotter.css">
+    <link rel="stylesheet" href="styles/syleOfFotter.css"> -->
+
+    <link rel="stylesheet" href="dist/bundle.css">
  <!-- fonts -->
  <link rel="preconnect" href="https://fonts.gstatic.com">
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
@@ -50,19 +52,16 @@
                     </ul>
                 </nav>
             </div>
-            
-        
     </header>
     
-    <section class="slideshow" id = "slidershow" name = "slidershow">
+    <section class="slideshow" >
         <img src="img/banner1.png" alt="" class= "slideshow__image">
         <img src="img/banner2.png" alt="" class= "slideshow__image">
         <video class= "slideshow__image" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
          
           </video>
-        <!-- <img src="img/banner1.png" alt="" class= "slideshow__image"> -->
-        <div class="slideshow__wrap">
+        <div class="slideshow__wrap" id="slidershow" name ="slidershow">
             <div class="slideshow__content">
 
                 <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
@@ -75,8 +74,6 @@
                 <div class="slideshow__button">
                     <button class="button">Start Free Trial</button>
                 </div>
-                
-                
             </div>
             <div class="dots">
                 <span class = "cirgle_green"><span class="dot dot_white " onclick="currentDiv(1)"></span></span>    
@@ -116,9 +113,6 @@
                     <button class="button__service">Learn more --&#8674;</button>  
                 </div>
             </div>
-
-
-
             <div class="instruction padding_7per_1per">
                 <div class="instruction__image padding_left_4per margin_top_minus_10px ">
                     <div class="cirsle_point">
@@ -145,9 +139,7 @@
                     <button class="button__service">Learn more --&#8674;</button>  
                 </div>
             </div>
-
-
-            <div class="instruction padding_top_10per padding_left_2per">
+             <div class="instruction padding_top_10per padding_left_2per">
                 <div class="instruction__image">
                     <div class="cirsle_point">
                         <div class="circle_grey">
@@ -178,9 +170,8 @@
 
 
     <!-- team -->
-    <section id = "team" class=" padding_top_18per " name = "team">
-        
-            <div class="team_wrap">
+    <section class=" padding_top_18per " > 
+            <div class="team_wrap" id = "team" name = "team">
                 <div class="team__member_info padding_top_2per">
                     <p class="h3_green" id='nameOfMember'></p>
                     <p class="h4_grey margine_bootom_40" id="positionOfMember"></p>
@@ -215,13 +206,11 @@
                     
                 </div>
             </div>
-            
-        
     </section>
 
     <!-- contacts -->
-    <section id="contaacts" name =" contaacts">
-            <div class="contacts_wrap padding_top_10per padding_left_2per">
+    <section >
+            <div class="contacts_wrap padding_top_10per padding_left_2per" id="contaacts" name =" contaacts">
                 <div class="contacts_locations">
                     <h2 class="h2_green margine_bootom_15">Meet Us <br> in Your City</h2>
                     
@@ -267,11 +256,7 @@
                     
                 </div>
                 <div class="contacts__map">
-                    <div class="map" id="map">
-                        <!-- <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3156997987!2d-74.26055955700217!3d40.69714773927938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1608235857495!5m2!1suk!2sua" 
-                         frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-
-                    </div>
+                    <div class="map" id="map"></div>
                     <div class="contacts__map__info padding_top_8per padding_left_7per"> 
                         <h3 class="h3_dark padding_bottom" id = "choosenCity"></h3>
                         <h4 class="h4_grey margine_bootom_26 ">
@@ -315,10 +300,10 @@
                 </div>
                 <nav class="navbar">
                     <ul class="navabr__ul">
-                        <li class="navbar__item"><a href="#" class="navbar__link h4_grey">Home</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h4_grey">Services</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h4_grey">Team</a></li>
-                        <li class="navbar__item"><a href="#" class="navbar__link h4_grey"> Conatact Us</a></li>
+                        <li class="navbar__item"><a href="#slidershow" class="navbar__link h4_grey">Home</a></li>
+                        <li class="navbar__item"><a href="#services" class="navbar__link h4_grey">Services</a></li>
+                        <li class="navbar__item"><a href="#team" class="navbar__link h4_grey">Team</a></li>
+                        <li class="navbar__item"><a href="#contaacts" class="navbar__link h4_grey"> Conatact Us</a></li>
                     </ul>
                 </nav>
                 <h4 class="h4_grey sign">
@@ -328,10 +313,6 @@
             
 
     </footer>
-    <script src="scripts/team.js"></script>
-    <script src="scripts/slideshow.js"></script>
-    <script src="scripts/burgerMenu.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/map.js"></script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
